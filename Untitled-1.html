@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+        header {
+            background: #020617;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #38bdf8;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: rgb(185, 9, 9);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website 🚀</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Hello, I'm Silver 👋</h2>
+    <p>This is my first website. Built from the basics!</p>
+    <button class="btn" onclick="showMessage()">Click Me</button>
+</section>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("You're doing great! push header and Keep learning 💪🔥");
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver | Cybersecurity Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background: black;
+    color: #00ff9f;
+}
+
+/* NAVBAR */
+header {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #00ff9f;
+}
+
+nav a {
+    color: #00ff9f;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    font-size: 24px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    border: 1px solid #00ff9f;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* PROJECTS */
+.project {
+    border: 1px solid #00ff9f;
+    padding: 15px;
+    margin: 15px;
+}
+
+/* BUTTON */
+.btn {
+    background: #00ff9f;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #00ff9f;
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+<div id="loginPage">
+    <h2>🔐 Access Terminal</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+    <p id="error" style="color:rgb(94, 3, 3);"></p>
+</div>
+
+<div id="mainContent" style="display:none;">
+<body>
+
+<header>
+    <h1>🛡️ Silver | Cybersecurity Analyst</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <p id="typing"></p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm a cybersecurity enthusiast focused on ethical hacking, penetration testing,
+        and network security. I actively train on platforms like TryHackMe and build
+        real-world security skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Linux</span>
+        <span>Networking</span>
+        <span>Python</span>
+        <span>Web Security</span>
+        <span>Penetration Testing</span>
+        <span>Wireshark</span>
+        <span>Nmap</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>🔐 Vulnerability Scanner</h3>
+        <p>A basic Python tool that scans open ports and detects vulnerabilities.</p>
+    </div>
+
+    <div class="project">
+        <h3>🌐 Website Security Audit</h3>
+        <p>Performed security testing on sample websites and documented findings.</p>
+    </div>
+
+    <div class="project">
+        <h3>🧠 TryHackMe Labs</h3>
+        <p>Completed multiple rooms covering networking, web hacking, and privilege escalation.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: eneojosilver@gmail.com</p>
+    <button class="btn" onclick="contact()">Hire Me</button>
+</section>
+
+<footer>
+    <p>© 2026 Silver | Cybersecurity Portfolio</p>
+</footer>
+
+<script>
+// Typing effect
+const text = ">> Ethical Hacker | Penetration Tester | Cybersecurity Student";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 50);
+    }
+}
+
+typeEffect();
+
+// Button action
+function contact() {
+    alert("Let's work together 🔥 Email me!");
+}
+</script>
+</div> <!-- closes mainContent -->
+
+<script>
+function login() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "hacker123") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+    } else {
+        document.getElementById("error").innerText = "Access blocked ❌";
+    }
+}
+</script>
+</body>
+</html>
+<section class="hero">
+    <p>> Welcome to ASPIDA X TERIOS System</p>
+    <p>> Type "help" to begin</p>
+    <input type="text" id="command" placeholder="Enter command..." onkeydown="runCommand(event)">
+    <div id="output"></div>
+</section>
+<script>
+function runCommand(e) {
+    if(e.key === "Enter") {
+        let cmd = document.getElementById("command").value;
+        let output = document.getElementById("output");
+
+        if(cmd === "help") {
+            output.innerHTML += "<p>> Commands: about, skills, projects, clear</p>";
+        }
+        else if(cmd === "about") {
+            output.innerHTML += "<p>> Cybersecurity student | Ethical hacker</p>";
+        }
+        else if(cmd === "skills") {
+            output.innerHTML += "<p>> Linux | Nmap | Wireshark | Python</p>";
+        }
+        else if(cmd === "projects") {
+            output.innerHTML += "<p>> Vulnerability Scanner | Web Audit</p>";
+        }
+        else if(cmd === "clear") {
+            output.innerHTML = "";
+        }
+        else {
+            output.innerHTML += "<p>> Command not detected</p>";
+        }
+
+        document.getElementById("command").value = "";
+    }
+}
+</script>
